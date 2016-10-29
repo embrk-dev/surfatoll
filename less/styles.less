@@ -1,0 +1,140 @@
+@import "variables";
+@import "fonts";
+@import "reset";
+
+html,body{height:100%;}
+body{
+	color:@bodycolor;
+	font:16px/24px @fonts;
+	min-width:320px;
+	background:#fff;
+}
+.homepage{background: #fff url(../images/bg-page1.jpg) no-repeat 50% 0;}
+.wrapper{
+	margin:0 auto;
+	max-width:1350px;
+	padding:0 15px;
+}
+.promo{position: relative;}
+.icon{
+	background:@sprites;
+	position: absolute;
+}
+#header{
+	padding:42px 0 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	.wrapper{
+		max-width: 1500px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	.holder{
+		float: right;
+		padding-top: 28px;
+	}
+	.explore{
+		float: left;
+		padding-left: 30px;
+		position: relative;
+		cursor: pointer;
+		color: #fff;
+		text-transform: uppercase;
+		line-height: 19px;
+		&:before{
+			content: '';
+			background-position: -434px -156px;
+			width: 19px;
+		  height: 14px;
+			left: 0;
+			top: 3px;
+			&:extend(.icon);
+		}
+		&:hover{text-decoration: underline;}
+	}
+	.languages{
+		float: left;
+		padding-left: 15px;
+		li{
+			float: left;
+			margin-left: 11px;
+			width: 28px;
+		  height: 19px;
+		}
+		a{
+			display: block;
+			text-indent: -9999px;
+			height: 100%;
+			background:@sprites;
+			background-position:  -401px -243px;
+		}
+		.french_lang{background-position:-401px -262px;}
+	}
+}
+.logo{
+	float:left;
+	margin:0;
+	text-indent:-9999px;
+	background:url(../images/logo.png) no-repeat;
+	width:258px;
+	height:70px;
+	a{
+		display: block;
+		height:100%;
+		text-indent:-9999px;
+	}
+}
+@signup_block_text_w:735px;
+@signup_block_max_w:1245px;
+
+.signup_block{
+	background-color: #0693a1;
+	color: #fff;
+	position: relative;
+	.wrapper{
+		padding-top: 46px;
+		padding-bottom: 50px;
+		max-width: @signup_block_max_w;
+		&:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	.text{
+		float: left;
+		width: percentage(@signup_block_text_w/1245);
+		font-weight: 300;
+		.img{
+			float: left;
+			.br50;
+			overflow: hidden;
+			margin-right: percentage(60/@signup_block_text_w);
+			max-width: percentage(270/@signup_block_text_w);
+			img{
+				display: block;
+				height: auto;
+				width: 100%;
+			}
+		}
+		.holder{
+			overflow: hidden;
+			height: 1%;
+			padding-top: 34px;
+			p{margin-bottom: 10px;}
+			p strong{font-weight: 500;}
+		}
+		.title{
+			display: block;
+			font:300 24px/30px @fonts2;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+	}
+}
+.signup_form{
+	width: 100% - percentage(@signup_block_text_w/@signup_block_max_w) - percentage(110/@signup_block_max_w);
+	float: right;
+}

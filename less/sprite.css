@@ -1,0 +1,252 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-btn-next-white {
+  background-image: url(sprite.png);
+  background-position: -433px -58px;
+  width: 20px;
+  height: 37px;
+}
+.icon-btn-next {
+  background-image: url(sprite.png);
+  background-position: -415px -281px;
+  width: 14px;
+  height: 30px;
+}
+.icon-btn-prev-white {
+  background-image: url(sprite.png);
+  background-position: -401px -206px;
+  width: 20px;
+  height: 37px;
+}
+.icon-btn-prev {
+  background-image: url(sprite.png);
+  background-position: -401px -281px;
+  width: 14px;
+  height: 30px;
+}
+.icon-flag-france {
+  background-image: url(sprite.png);
+  background-position: -401px -262px;
+  width: 28px;
+  height: 19px;
+}
+.icon-flag-uk {
+  background-image: url(sprite.png);
+  background-position: -401px -243px;
+  width: 28px;
+  height: 19px;
+}
+.icon-ico-attols {
+  background-image: url(sprite.png);
+  background-position: -221px -90px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-close {
+  background-image: url(sprite.png);
+  background-position: -421px -206px;
+  width: 24px;
+  height: 24px;
+}
+.icon-ico-crew {
+  background-image: url(sprite.png);
+  background-position: -90px -220px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-dates {
+  background-image: url(sprite.png);
+  background-position: -180px -220px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-departs {
+  background-image: url(sprite.png);
+  background-position: -311px 0px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-domesticflight {
+  background-image: url(sprite.png);
+  background-position: 0px -130px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-explore {
+  background-image: url(sprite.png);
+  background-position: -434px -156px;
+  width: 19px;
+  height: 14px;
+}
+.icon-ico-fourstarsresort {
+  background-image: url(sprite.png);
+  background-position: -221px -180px;
+  width: 60px;
+  height: 15px;
+}
+.icon-ico-livesurfsupport {
+  background-image: url(sprite.png);
+  background-position: -311px -270px;
+  width: 68px;
+  height: 27px;
+}
+.icon-ico-longwide {
+  background-image: url(sprite.png);
+  background-position: 0px -220px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-maxpeople {
+  background-image: url(sprite.png);
+  background-position: -221px 0px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-minmax {
+  background-image: url(sprite.png);
+  background-position: -90px -130px;
+  width: 90px;
+  height: 90px;
+}
+.icon-ico-minnights {
+  background-image: url(sprite.png);
+  background-position: -136px -370px;
+  width: 61px;
+  height: 43px;
+}
+.icon-ico-newsletter {
+  background-image: url(sprite.png);
+  background-position: -401px 0px;
+  width: 54px;
+  height: 58px;
+}
+.icon-ico-perfectforcouples {
+  background-image: url(sprite.png);
+  background-position: -401px -58px;
+  width: 32px;
+  height: 62px;
+}
+.icon-ico-plane {
+  background-image: url(sprite.png);
+  background-position: -433px -95px;
+  width: 20px;
+  height: 19px;
+}
+.icon-ico-play-small {
+  background-image: url(sprite.png);
+  background-position: -130px 0px;
+  width: 91px;
+  height: 91px;
+}
+.icon-ico-play {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 130px;
+  height: 130px;
+}
+.icon-ico-privatebreak {
+  background-image: url(sprite.png);
+  background-position: -401px -120px;
+  width: 48px;
+  height: 36px;
+}
+.icon-ico-surfer-blue {
+  background-image: url(sprite.png);
+  background-position: 0px -370px;
+  width: 68px;
+  height: 46px;
+}
+.icon-ico-surfer-brown {
+  background-image: url(sprite.png);
+  background-position: -68px -370px;
+  width: 68px;
+  height: 46px;
+}
+.icon-ico-swell-blue {
+  background-image: url(sprite.png);
+  background-position: -401px -156px;
+  width: 33px;
+  height: 25px;
+}
+.icon-ico-swell-white {
+  background-image: url(sprite.png);
+  background-position: -401px -181px;
+  width: 33px;
+  height: 25px;
+}
+.icon-ico-weather1 {
+  background-image: url(sprite.png);
+  background-position: 0px -310px;
+  width: 60px;
+  height: 60px;
+}
+.icon-ico-weather2 {
+  background-image: url(sprite.png);
+  background-position: -311px -210px;
+  width: 60px;
+  height: 60px;
+}
+.icon-ico-weather3 {
+  background-image: url(sprite.png);
+  background-position: -311px -150px;
+  width: 60px;
+  height: 60px;
+}
+.icon-ico-weather4 {
+  background-image: url(sprite.png);
+  background-position: -311px -90px;
+  width: 60px;
+  height: 60px;
+}
+.icon-ico01 {
+  background-image: url(sprite.png);
+  background-position: -116px -310px;
+  width: 56px;
+  height: 56px;
+}
+.icon-ico02 {
+  background-image: url(sprite.png);
+  background-position: -172px -310px;
+  width: 56px;
+  height: 56px;
+}
+.icon-ico03 {
+  background-image: url(sprite.png);
+  background-position: -228px -310px;
+  width: 56px;
+  height: 56px;
+}
+.icon-ico04 {
+  background-image: url(sprite.png);
+  background-position: -284px -310px;
+  width: 56px;
+  height: 56px;
+}
+.icon-ico05 {
+  background-image: url(sprite.png);
+  background-position: -60px -310px;
+  width: 56px;
+  height: 56px;
+}
+.icon-ico06 {
+  background-image: url(sprite.png);
+  background-position: -340px -310px;
+  width: 56px;
+  height: 56px;
+}
