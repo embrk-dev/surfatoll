@@ -63,6 +63,28 @@ body{
 	width: 100%;
 	height: auto;
 }
+.top_bar{
+	text-align: center;
+	background-color: #239aac;
+	padding: 15px 10px;
+	color: #fff;
+	p:extend(.h3){
+		display: inline-block;
+		margin:0 26px 0 0;
+		color: #fff;
+		letter-spacing: 2px;
+		vertical-align: top;
+		padding: 8px 0;
+	}
+	.btn{
+		vertical-align: top;
+		box-shadow:0 3px 3px #016879;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-color: #016879;
+		&:hover{background-color: #014f5c;}
+	}
+}
 .promo{
 	position: relative;
 	padding: 220px 0;
@@ -656,6 +678,7 @@ body{
 		padding: 20px 0;
 	}
 }
+.newsletter_block_blue{background-color: #0693a1;}
 .subscribe_form{
 	&:after:extend(.clearflow:after){}
 	.label{
@@ -680,6 +703,17 @@ body{
 			margin-top: 2px;
 		}
 	}
+	.label_surfer{
+		padding-left: 9%;
+		width: 45%;
+		&:before{
+			background-position: 0 -371px;
+		  width: 87px;
+		  height: 59px;
+			top: 7px;
+		}
+	}
+	.newsletter_block_blue & .label_surfer:before{background-position: -368px -371px;}
 	.set{
 		float: right;
 		width: 46%;
@@ -703,13 +737,24 @@ body{
 		box-shadow:0 3px 8px #5f4e2c;
 		&:hover{background: #493c22;}
 	}
+	.newsletter_block_blue & .btn_submit{
+		background-color: #016879;
+		box-shadow:0 3px 4px #016879;
+
+	}
+	@media screen and (max-width:910px) {
+		.label_surfer{
+			padding-left: 10%;
+			width: 44%;
+		}
+	}
 	@media screen and (max-width:800px) {
 		text-align: center;
 		.label{
 			float: none;
 			display: block;
 			width: auto;
-			padding-left:80px;
+			padding-left:90px;
 			margin-bottom: 20px;
 			display: inline-block;
 			text-align: left;
@@ -733,11 +778,19 @@ body{
 #footer{
 	background: #232323;
 	color: #fff;
+	&.footer_brown{
+		background-color: #907642;
+		color: #dec28a;
+	}
 	.wrapper{
 		max-width: 900px;
 		padding-top: 44px;
 		padding-bottom: 55px;
 		overflow: hidden;
+	}
+	.services_wrapper{
+		max-width: 1300px;
+		padding-bottom: 30px;
 	}
 	@footer_logo_w:354;
 	@footer_logo_h:96;
@@ -789,6 +842,26 @@ body{
 			ul{width: 48%;text-align: center;}
 		}
 	}
+	&.footer_brown .lists a{
+		color: #dec28a;
+	}
+	.col_lists{
+		float: left;
+		width: 33%;
+		margin-bottom: 0;
+		@media screen and (max-width:768px) {
+			float: none;
+			width: 100%;
+		}
+	}
+	.services_wrapper .col_lists ul:last-child,
+	.services_wrapper .col_lists ul{
+		float: left;
+		width: 49%;
+		margin-right: 1%;
+		margin-left: 0;
+		text-align: left;
+	}
 	.socials{
 		text-align: center;
 		font-size: 24px;
@@ -800,6 +873,14 @@ body{
 			display: inline-block;
 			padding: 0 12px;
 		}
+	}
+	.col_lists .socials{
+		font-size: 16px;
+		li{
+			padding: 0 0 2px;
+			display: block;
+		}
+		.fa{width: 33px;}
 	}
 	@media screen and (max-width:414px) {
 		strong.logo{
@@ -867,6 +948,57 @@ body{
 		.btn{float: none;}
 	}
 }
+.weather_col{
+	float: right;
+	width: 66%;
+	h4:extend(.h3, #footer .lists h4){margin-bottom: 28px;}
+	@media screen and (max-width:768px) {
+		float: none;
+		width: 100%;
+	}
+}
+.list_weather{
+	overflow: hidden;
+	li{
+		float: left;
+		margin: 0 25px 20px 0;
+	}
+	.icon{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		margin-right: 9px;
+		background:@sprites 0 -310px;
+		vertical-align: top;
+		position: static;
+	}
+	.icon_tides{background-position: -311px -210px;}
+	.icon_weather{background-position: -311px -150px;}
+	.icon_time{background-position: -311px -90px;}
+	.text{
+		display: inline-block;
+		vertical-align: top;
+		font-weight: 300;
+		color: #999;
+		padding-top: 8px;
+		.value{display: block;}
+		dt{
+			font-weight: bold;
+			display: inline-block;
+			margin: 0 3px 0 20px;
+			&:first-child{margin-left: 0;}
+		}
+		dd{
+			display: inline-block;
+		}
+	}
+	.footer_brown & .text{color: #dec28a;}
+	h5:extend(.h3){
+		font-size: 18px;
+		color: #fff;
+		margin-bottom: 0;
+	}
+}
 .btm_bar{
 	background-color: #1b1b1b;
 	text-transform: uppercase;
@@ -876,6 +1008,14 @@ body{
 	color: #494949;
 	text-align: center;
 	padding: 13px 10px;
+	.footer_brown &{
+		background-color: #5f4e2c;
+		color: #fff;
+		a{
+			color: #fff;
+			&:hover{border-bottom: 1px dotted #fff;}
+		}
+	}
 	p{
 		margin: 0;
 		display: inline-block;
