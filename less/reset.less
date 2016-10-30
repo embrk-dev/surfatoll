@@ -19,12 +19,7 @@ h4:extend(h1){font-size:16px;}
 h5:extend(h1){font-size:14px;}
 h6:extend(h1){font-size:12px;}
 img{vertical-align:top;}
-p{
-	margin:0 0 18px;
-	-webkit-hyphens:auto;
-	-ms-hyphens:auto;
-	hyphens:auto;
-}
+p{margin:0 0 18px;}
 strong{font-weight:bold;}
 ul{list-style:none;}
 abbr{text-decoration: none;}
@@ -39,10 +34,18 @@ a{
 }
 mark{background:none;}
 input{
-	font:14px @fonts;
+	font:16px @fonts;
 	-webkit-appearance:none;
 	border-radius:0;
 }
 textarea:extend(input){resize:vertical;}
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;}
+input:-moz-placeholder      {text-overflow:ellipsis;}
+input:-ms-input-placeholder {text-overflow:ellipsis;}
+:focus::-webkit-input-placeholder {color: transparent !important;}
+:focus::-moz-placeholder          {color: transparent !important;}
+:focus:-moz-placeholder           {color: transparent !important;}
+:focus:-ms-input-placeholder      {color: transparent !important;}
 fieldset{border-style:none;}
 label[for], input[type=checkbox], input[type=radio], input[type=submit], button, select{cursor:pointer;}
