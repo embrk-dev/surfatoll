@@ -7,4 +7,4 @@
 
 .br50(){border-radius: 50%;}
 .br(@radius: 4px){border-radius: @radius;}
-.trans(@ms:.25s){transition:all @ms ease-in-out;}
+.trans(@properties:all; @ms:.25s){transition:@properties @ms ease-in-out;}
