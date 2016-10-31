@@ -1,0 +1,163 @@
+/* chickens page*/
+.visual_chickens{background-image: url(../images/img62.jpg);}
+.break_name{
+  position: absolute;
+  top: 257px;
+  left: 185px;
+  color: #584828;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 34px;
+  &:after:extend(.fa){
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: -2px;
+    background:@sprites -88px -371px;
+    width: 25px;
+    height: 25px;
+  }
+}
+.atoll_map .point:extend(.about_atolls .atolls_maps .islands .point, .about_atolls .atolls_maps .islands .point_maleairport){}
+.north_atoll .point_maleairport{
+  padding-left: 25px;
+  line-height: 14px;
+  top: 388px;
+  left: 128px;
+  &:after:extend(.icon_plane){
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+.break_info{
+  padding-top: 60px;
+  width: 100%;
+  clear: both;
+  max-width:1250px;
+  &:after:extend(.clearflow:after){}
+  .btn_view{
+    float: right;
+    margin-top: 20px;
+    @media screen and (max-width:414px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      .logo_magicseaweed{margin-right: 8px;}
+    }
+  }
+  .holder{
+    padding-bottom: 70px;
+    &:after:extend(.clearflow:after){}
+  }
+  @media screen and (max-width:1100px) {
+    padding-top: 0;
+    text-align: center;
+    .break_details{
+      float: none;
+      margin: 0 auto 25px;
+      overflow: hidden;
+      width: auto;
+      li{
+        float: none;
+        width: 90px;
+        display: inline-block;
+        vertical-align: top;
+        margin:0 20px 15px;
+        &:first-child{margin-left: 20px;}
+      }
+    }
+    .btn_view{
+      float: none;
+      margin: 0;
+    }
+    .holder{padding-bottom: 40px;}
+  }
+}
+.break_details{
+  float: left;
+  text-align: center;
+  width:645px;
+  margin-right: 10px;
+  &>li{
+    float: left;
+    width:90px;
+    margin: 0 0 15px 48px;
+    &:first-child{margin-left: 0;}
+  }
+  strong{
+    display: block;
+    text-transform: uppercase;
+    font:13px/18px @fonts2;
+  }
+  .badge:extend(.icon_opt:after){
+    position: static;
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 0 10px;
+    color: #fff;
+    overflow: hidden;
+    .fa-long-arrow-left{
+      font-size: 32px;
+      line-height: 20px;
+      margin-top: 30px;
+      display: block;
+    }
+    .fa-location-arrow{
+      font-size: 24px;
+      line-height: 20px;
+      margin-top: 28px;
+      display: block;
+      transform: rotate(270deg);
+      margin-bottom: 3px;
+    }
+    i{
+      font-size: 12px;
+      display: block;
+    }
+    b{
+      display: block;
+      font-weight: 500;
+      font-size: 24px;
+      margin-top: 28px;
+    }
+    .rating{
+      font-size: 16px;
+      padding-top: 32px;
+      margin-left: -3px;
+      display: block;
+      .fa{margin-right: -3px;}
+    }
+  }
+}
+.logo_magicseaweed{
+  display: inline-block;
+  text-indent:-9999px;
+  overflow: hidden;
+  background:@sprites -311px -270px;
+  width: 68px;
+  height: 27px;
+  margin: 0 26px 0 0;
+  vertical-align: top;
+}
+@images_w:1350;
+.break_images{
+  overflow: hidden;
+  margin-left:percentage(-25/@images_w);
+  li{
+    float: left;
+    width:percentage(200/@images_w);
+    margin: 0 0 percentage(25/@images_w) percentage(25/@images_w);
+  }
+  img:extend(.fullwidth_img){}
+  @media screen and (max-width:768px) {
+    margin-left: -2%;
+    li{
+      width: 100%/3-2%;
+      margin: 0 0 2% 2%;
+    }
+  }
+}
+/* end of chickens page*/

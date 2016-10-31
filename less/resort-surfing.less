@@ -1,0 +1,73 @@
+/* resort surfing page*/
+.visual_resort_surfing{background-image: url(../images/img29.jpg);}
+.content{
+  &:after:extend(.clearflow:after){}
+  padding-bottom: 50px;
+  .text:extend(.about_atolls .text){
+    max-width: none;
+    width: 45%;
+    padding-top: 55px;
+    float: left;
+    h3:extend(.h3,.about_atolls .text h3){}
+  }
+  .sidebar{
+    float: right;
+    padding-right: 5%;
+    width: 43%;
+    background:url(../images/bg-atoll.jpg) no-repeat;
+  }
+  .clearflow{padding-bottom: 50px;}
+}
+.details_list{
+  padding-top: 10px;
+  &>dt{
+    color: #474747;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  p{margin: 0;}
+  &>dd{margin-bottom:20px;}
+  li{
+    position: relative;
+    padding-left: 16px;
+    &:after{
+      content: '\2022';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  dl{
+    overflow: hidden;
+    padding-top: 7px;
+    dt{
+      float: left;
+      width: 90px;
+      margin: 0 10px 10px 0;
+      font-weight: 500;
+      clear: left;
+    }
+    dd{
+      float: left;
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 10px;
+      strong{
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        margin-right: 6px;
+      }
+      span{
+        font-size: 16px;
+        font-weight: 300;
+      }
+      b{
+        font-weight: 500;
+        border-bottom: 1px solid #d0d0d0;
+      }
+    }
+  }
+}
+/* end of resort surfing page*/

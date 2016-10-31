@@ -76,7 +76,8 @@
 	font-weight:normal;
 	font-style:normal;
 }
-.fa{
+.fa,
+.break_name:after{
 	display:inline-block;
 	font:normal normal normal 14px/1 FontAwesome;
 	font-size:inherit;
@@ -107,6 +108,9 @@
 }
 .fa-long-arrow-right:before{
 	content:"\f178";
+}
+.fa-location-arrow:before{
+	content:"\f124";
 }
 /* Global Reset */
 *{
@@ -292,7 +296,10 @@ body{
 .recent_blog_articles .blocks:after,
 .subscribe_form:after,
 .wintrip:after,
-.about_atolls .district_maps:after{
+.about_atolls .district_maps:after,
+.break_info:after,
+.break_info .holder:after,
+.content:after{
 	content:"";
 	display:block;
 	clear:both;
@@ -311,7 +318,9 @@ body{
 .swell_charts h3,
 .content_holder h3,
 .breaks_section .heading h3,
-.weather_col h4{
+.content .text h3,
+.weather_col h4,
+.content .text h3{
 	text-transform:uppercase;
 	color:#474747;
 	font:300 24px Montserrat, Arial, sans-serif;
@@ -324,7 +333,8 @@ body{
 .recent_blog_articles .block img,
 .wintrip .img img,
 .about_atolls .atoll_map .points_list .about .img img,
-.breaks_table .col_break_name .img img{
+.breaks_table .col_break_name .img img,
+.break_images img{
 	display:block;
 	width:100%;
 	height:auto;
@@ -942,7 +952,8 @@ body{
 	padding:20px 0 20px 64px;
 }
 .icon_opt:before,
-.icon_opt:after{
+.icon_opt:after,
+.break_details .badge{
 	content:"";
 	position:absolute;
 	left:0;
@@ -1685,7 +1696,8 @@ body{
 	top:598px;
 }
 .about_atolls .atolls_maps .islands .point,
-.about_atolls .atoll_map .points_list a{
+.about_atolls .atoll_map .points_list a,
+.atoll_map .point{
 	text-transform:uppercase;
 	font-weight:500;
 	font-size:12px;
@@ -1699,7 +1711,8 @@ body{
 	left:145px;
 	top:15px;
 }
-.about_atolls .atolls_maps .islands .point_maleairport{
+.about_atolls .atolls_maps .islands .point_maleairport,
+.atoll_map .point{
 	left:144px;
 	top:51px;
 	color:#584828;
@@ -1756,13 +1769,15 @@ body{
 	border-top:1px solid #d3c8b4;
 	padding-top:12px;
 }
-.about_atolls .text{
+.about_atolls .text,
+.content .text{
 	overflow:hidden;
 	max-width:550px;
 	padding-top:65px;
 	font-weight:300;
 }
-.about_atolls .text h3{
+.about_atolls .text h3,
+.content .text h3{
 	margin-bottom:30px;
 	letter-spacing:1px;
 }
@@ -1776,7 +1791,8 @@ body{
 	.about_atolls .atolls_maps .islands{
 		margin:63px auto 0;
 	}
-	.about_atolls .text{
+	.about_atolls .text,
+	.content .text{
 		float:none;
 		max-width:100%;
 		padding-top:0;
@@ -1803,7 +1819,8 @@ body{
 		white-space:nowrap;
 	}
 }
-.icon_plane{
+.icon_plane,
+.north_atoll .point_maleairport:after{
 	background:url(../images/sprite.png) no-repeat -433px -95px;
 	width:20px;
 	height:19px;
@@ -2322,3 +2339,259 @@ body{
 	}
 }
 /* end of northern-atolls page*/
+/* chickens page*/
+.visual_chickens{
+	background-image:url(../images/img62.jpg);
+}
+.break_name{
+	position:absolute;
+	top:257px;
+	left:185px;
+	color:#584828;
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:500;
+	padding-left:34px;
+}
+.break_name:after{
+	content:"";
+	position:absolute;
+	left:8px;
+	top:-2px;
+	background:url(../images/sprite.png) no-repeat -88px -371px;
+	width:25px;
+	height:25px;
+}
+.north_atoll .point_maleairport{
+	padding-left:25px;
+	line-height:14px;
+	top:388px;
+	left:128px;
+}
+.north_atoll .point_maleairport:after{
+	content:"";
+	position:absolute;
+	left:0;
+	top:0;
+}
+.break_info{
+	padding-top:60px;
+	width:100%;
+	clear:both;
+	max-width:1250px;
+}
+.break_info .btn_view{
+	float:right;
+	margin-top:20px;
+}
+@media screen and (max-width: 414px){
+	.break_info .btn_view{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.break_info .btn_view .logo_magicseaweed{
+		margin-right:8px;
+	}
+}
+.break_info .holder{
+	padding-bottom:70px;
+}
+@media screen and (max-width: 1100px){
+	.break_info{
+		padding-top:0;
+		text-align:center;
+	}
+	.break_info .break_details{
+		float:none;
+		margin:0 auto 25px;
+		overflow:hidden;
+		width:auto;
+	}
+	.break_info .break_details li{
+		float:none;
+		width:90px;
+		display:inline-block;
+		vertical-align:top;
+		margin:0 20px 15px;
+	}
+	.break_info .break_details li:first-child{
+		margin-left:20px;
+	}
+	.break_info .btn_view{
+		float:none;
+		margin:0;
+	}
+	.break_info .holder{
+		padding-bottom:40px;
+	}
+}
+.break_details{
+	float:left;
+	text-align:center;
+	width:645px;
+	margin-right:10px;
+}
+.break_details > li{
+	float:left;
+	width:90px;
+	margin:0 0 15px 48px;
+}
+.break_details > li:first-child{
+	margin-left:0;
+}
+.break_details strong{
+	display:block;
+	text-transform:uppercase;
+	font:13px/18px Montserrat, Arial, sans-serif;
+}
+.break_details .badge{
+	position:static;
+	display:block;
+	width:90px;
+	height:90px;
+	margin:0 0 10px;
+	color:#fff;
+	overflow:hidden;
+}
+.break_details .badge .fa-long-arrow-left{
+	font-size:32px;
+	line-height:20px;
+	margin-top:30px;
+	display:block;
+}
+.break_details .badge .fa-location-arrow{
+	font-size:24px;
+	line-height:20px;
+	margin-top:28px;
+	display:block;
+	-webkit-transform:rotate(270deg);
+	transform:rotate(270deg);
+	margin-bottom:3px;
+}
+.break_details .badge i{
+	font-size:12px;
+	display:block;
+}
+.break_details .badge b{
+	display:block;
+	font-weight:500;
+	font-size:24px;
+	margin-top:28px;
+}
+.break_details .badge .rating{
+	font-size:16px;
+	padding-top:32px;
+	margin-left:-3px;
+	display:block;
+}
+.break_details .badge .rating .fa{
+	margin-right:-3px;
+}
+.logo_magicseaweed{
+	display:inline-block;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(../images/sprite.png) no-repeat -311px -270px;
+	width:68px;
+	height:27px;
+	margin:0 26px 0 0;
+	vertical-align:top;
+}
+.break_images{
+	overflow:hidden;
+	margin-left:-1.85185185%;
+}
+.break_images li{
+	float:left;
+	width:14.81481481%;
+	margin:0 0 1.85185185% 1.85185185%;
+}
+@media screen and (max-width: 768px){
+	.break_images{
+		margin-left:-2%;
+	}
+	.break_images li{
+		width:31.33333333%;
+		margin:0 0 2% 2%;
+	}
+}
+/* end of chickens page*/
+/* resort surfing page*/
+.visual_resort_surfing{
+	background-image:url(../images/img29.jpg);
+}
+.content{
+	padding-bottom:50px;
+}
+.content .text{
+	max-width:none;
+	width:45%;
+	padding-top:55px;
+	float:left;
+}
+.content .sidebar{
+	float:right;
+	padding-right:5%;
+	width:43%;
+	background:url(../images/bg-atoll.jpg) no-repeat;
+}
+.content .clearflow{
+	padding-bottom:50px;
+}
+.details_list{
+	padding-top:10px;
+}
+.details_list > dt{
+	color:#474747;
+	font-weight:500;
+	font-size:20px;
+	margin-bottom:5px;
+}
+.details_list p{
+	margin:0;
+}
+.details_list > dd{
+	margin-bottom:20px;
+}
+.details_list li{
+	position:relative;
+	padding-left:16px;
+}
+.details_list li:after{
+	content:"\2022";
+	position:absolute;
+	left:0;
+	top:0;
+}
+.details_list dl{
+	overflow:hidden;
+	padding-top:7px;
+}
+.details_list dl dt{
+	float:left;
+	width:90px;
+	margin:0 10px 10px 0;
+	font-weight:500;
+	clear:left;
+}
+.details_list dl dd{
+	float:left;
+	font-size:14px;
+	font-style:italic;
+	margin-bottom:10px;
+}
+.details_list dl dd strong{
+	font-size:16px;
+	font-weight:500;
+	font-style:normal;
+	margin-right:6px;
+}
+.details_list dl dd span{
+	font-size:16px;
+	font-weight:300;
+}
+.details_list dl dd b{
+	font-weight:500;
+	border-bottom:1px solid #d0d0d0;
+}
+/* end of resort surfing page*/
