@@ -815,6 +815,10 @@ body{
 	.intro .block .img h4{
 		font-size:34px;
 	}
+	.intro .options ul:last-child li{
+		float:left;
+		width:124px;
+	}
 }
 @media screen and (max-width: 360px){
 	.intro .options ul{
