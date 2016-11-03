@@ -305,21 +305,17 @@ body{
 	clear:both;
 }
 .h3,
-.top_bar p,
 .intro .description h3,
 .surfatoll_insta_photos h3,
 .recent_blog_articles h3,
 .subscribe_form .label strong,
 #footer .lists h4,
 .wintrip .text h4,
-.weather_col h4,
-.list_weather h5,
 .about_atolls .text h3,
 .swell_charts h3,
 .content_holder h3,
 .breaks_section .heading h3,
 .content .text h3,
-.weather_col h4,
 .content .text h3{
 	text-transform:uppercase;
 	color:#474747;
@@ -339,33 +335,9 @@ body{
 	width:100%;
 	height:auto;
 }
-.top_bar{
-	text-align:center;
-	background-color:#239aac;
-	padding:15px 10px;
-	color:#fff;
-}
-.top_bar p{
-	display:inline-block;
-	margin:0 26px 0 0;
-	color:#fff;
-	letter-spacing:2px;
-	vertical-align:top;
-	padding:8px 0;
-}
-.top_bar .btn{
-	vertical-align:top;
-	box-shadow:0 3px 3px #016879;
-	padding-top:12px;
-	padding-bottom:12px;
-	background-color:#016879;
-}
-.top_bar .btn:hover{
-	background-color:#014f5c;
-}
 .promo{
 	position:relative;
-	padding:220px 0;
+	padding:220px 0 270px;
 	min-height:560px;
 	color:#fff;
 	text-align:center;
@@ -675,7 +647,7 @@ body{
 #featured_trips{
 	max-width:995px;
 	padding:0 40px;
-	margin:0 auto 80px;
+	margin:0 auto 50px;
 	position:relative;
 }
 #featured_trips li{
@@ -763,7 +735,6 @@ body{
 }
 /* featured_trips end */
 .intro{
-	background:url(../images/bg-islands.jpg) no-repeat 50% 0;
 	padding:115px 0 80px;
 	text-align:center;
 	font-weight:300;
@@ -864,6 +835,7 @@ body{
 	margin-left:4%;
 	background-color:#fff;
 	box-shadow:0 7px 10px #bbb;
+	opacity:0;
 }
 .info_blocks .block:first-child{
 	margin-left:0;
@@ -993,7 +965,6 @@ body{
 	left:1px;
 }
 .surfatoll_insta_photos{
-	background:url(../images/bg-photos.jpg) no-repeat 50% 0;
 	padding:105px 0 180px;
 	text-align:center;
 }
@@ -1163,9 +1134,6 @@ body{
 		padding:20px 0;
 	}
 }
-.newsletter_block_blue{
-	background-color:#0693a1;
-}
 .subscribe_form .label{
 	float:left;
 	position:relative;
@@ -1197,9 +1165,6 @@ body{
 	width:87px;
 	height:59px;
 	top:7px;
-}
-.newsletter_block_blue .subscribe_form .label_surfer:before{
-	background-position:-368px -371px;
 }
 .subscribe_form .set{
 	float:right;
@@ -1237,10 +1202,6 @@ body{
 }
 .subscribe_form .btn_submit:hover{
 	background:#493c22;
-}
-.newsletter_block_blue .subscribe_form .btn_submit{
-	background-color:#016879;
-	box-shadow:0 3px 4px #016879;
 }
 @media screen and (max-width: 910px){
 	.subscribe_form .label_surfer{
@@ -1289,10 +1250,6 @@ body{
 	background:#232323;
 	color:#fff;
 }
-#footer.footer_brown{
-	background-color:#907642;
-	color:#dec28a;
-}
 #footer .wrapper{
 	max-width:900px;
 	padding-top:44px;
@@ -1333,8 +1290,7 @@ body{
 #footer .lists a:hover{
 	color:#fff;
 }
-#footer .lists h4,
-.weather_col h4{
+#footer .lists h4{
 	color:#fff;
 	font-size:18px;
 	letter-spacing:1px;
@@ -1363,28 +1319,6 @@ body{
 		text-align:center;
 	}
 }
-#footer.footer_brown .lists a{
-	color:#dec28a;
-}
-#footer .col_lists{
-	float:left;
-	width:33%;
-	margin-bottom:0;
-}
-@media screen and (max-width: 768px){
-	#footer .col_lists{
-		float:none;
-		width:100%;
-	}
-}
-#footer .services_wrapper .col_lists ul:last-child,
-#footer .services_wrapper .col_lists ul{
-	float:left;
-	width:49%;
-	margin-right:1%;
-	margin-left:0;
-	text-align:left;
-}
 #footer .socials{
 	text-align:center;
 	font-size:24px;
@@ -1398,16 +1332,6 @@ body{
 #footer .socials li{
 	display:inline-block;
 	padding:0 12px;
-}
-#footer .col_lists .socials{
-	font-size:16px;
-}
-#footer .col_lists .socials li{
-	padding:0 0 2px;
-	display:block;
-}
-#footer .col_lists .socials .fa{
-	width:33px;
 }
 @media screen and (max-width: 414px){
 	#footer strong.logo{
@@ -1480,73 +1404,6 @@ body{
 		float:none;
 	}
 }
-.weather_col{
-	float:right;
-	width:66%;
-}
-.weather_col h4{
-	margin-bottom:28px;
-}
-@media screen and (max-width: 768px){
-	.weather_col{
-		float:none;
-		width:100%;
-	}
-}
-.list_weather{
-	overflow:hidden;
-}
-.list_weather li{
-	float:left;
-	margin:0 25px 20px 0;
-}
-.list_weather .icon{
-	display:inline-block;
-	width:60px;
-	height:60px;
-	margin-right:9px;
-	background:url(../images/sprite.png) no-repeat 0 -310px;
-	vertical-align:top;
-	position:static;
-}
-.list_weather .icon_tides{
-	background-position:-311px -210px;
-}
-.list_weather .icon_weather{
-	background-position:-311px -150px;
-}
-.list_weather .icon_time{
-	background-position:-311px -90px;
-}
-.list_weather .text{
-	display:inline-block;
-	vertical-align:top;
-	font-weight:300;
-	color:#999;
-	padding-top:8px;
-}
-.list_weather .text .value{
-	display:block;
-}
-.list_weather .text dt{
-	font-weight:bold;
-	display:inline-block;
-	margin:0 3px 0 20px;
-}
-.list_weather .text dt:first-child{
-	margin-left:0;
-}
-.list_weather .text dd{
-	display:inline-block;
-}
-.footer_brown .list_weather .text{
-	color:#dec28a;
-}
-.list_weather h5{
-	font-size:18px;
-	color:#fff;
-	margin-bottom:0;
-}
 .btm_bar{
 	background-color:#1b1b1b;
 	text-transform:uppercase;
@@ -1556,16 +1413,6 @@ body{
 	color:#494949;
 	text-align:center;
 	padding:13px 10px;
-}
-.footer_brown .btm_bar{
-	background-color:#5f4e2c;
-	color:#fff;
-}
-.footer_brown .btm_bar a{
-	color:#fff;
-}
-.footer_brown .btm_bar a:hover{
-	border-bottom:1px dotted #fff;
 }
 .btm_bar p{
 	margin:0;
