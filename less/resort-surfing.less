@@ -5,18 +5,30 @@
   padding-bottom: 50px;
   .text:extend(.about_atolls .text){
     max-width: none;
-    width: 45%;
+    width: 48%;
     padding-top: 55px;
     float: left;
     h3:extend(.h3,.about_atolls .text h3){}
   }
   .sidebar{
     float: right;
-    padding-right: 5%;
+    padding-top: 45px;
     width: 48%;
     background:url(../images/bg-atoll.jpg) no-repeat;
   }
   .clearflow{padding-bottom: 50px;}
+  @media screen and (max-width:700px) {
+    .text{
+      float: none;
+      width: 100%;
+      padding: 0 0 20px;
+    }
+    .sidebar{
+      float: none;
+      padding: 0;
+      width: auto;
+    }
+  }
 }
 .details_list{
   padding-top: 10px;
@@ -71,8 +83,7 @@
   }
 }
 .reserve_resort_surfing_form{
-  width: 526px;
-  margin: 0 0 0 30px;
+  margin: 0 auto;
   background: #f1f1f1;
   box-shadow: 0 6px 14px #ccc;
   .heading{
@@ -84,6 +95,7 @@
       margin: 0;
     }
   }
+  .sidebar &{max-width: 526px;}
   .set{
     padding: 20px 30px 40px;
     p{
@@ -167,6 +179,11 @@
     .fa{margin-right: 10px;}
     &:hover{background: #2daf2b;}
   }
+  @media screen and (max-width:375px) {
+    .set{
+      padding: 20px 10px;
+    }
+  }
 }
 .jcf-select-drop{
   background: #fff;
@@ -208,5 +225,77 @@
     color: #7f7f7f;
     .br;
   }
+}
+.options_big{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  padding-bottom: 34px;
+  b{
+    font-weight: normal;
+    display: block;
+    color: #343434;
+  }
+  li{
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+    padding:95px 0 30px;
+    margin: 0 2%;
+  }
+  .icon_opt:before{
+    left: 40px;
+    width: 90px;
+    height: 90px;
+  }
+  .icon_flexible_dates:after{
+    background-position: -221px -109px;
+    width: 44px;
+    height: 46px;
+    left: 64px;
+    top:23px;
+  }
+  @media screen and (max-width:768px) {
+    li{margin: 0;}
+  }
+}
+.icon_more_surfers{
+  .amount{
+    position: absolute;
+    top: 14px;
+    left: 71px;
+    color: #fff;
+    font:bold 15px @fonts2;
+    z-index: 1;
+  }
+  &:after{
+    background-position: -221px -55px;
+    width: 39px;
+    height: 54px;
+    left: 65px;
+    top:17px;
+  }
+}
+.icon_north_male:after{
+  background-position: -301px -65px;
+  width: 15px;
+  height: 64px;
+  left: 78px;
+  top:14px;
+}
+.icon_possible_breaks:after{
+  background-position: -173px -130px;
+  width: 48px;
+  height: 36px;
+  left: 62px;
+  top:26px;
+}
+.icon_min_nights:after{
+  background-position: -112px -130px;
+  width: 61px;
+  height: 43px;
+  left: 54px;
+  top:23px;
 }
 /* end of resort surfing page*/
