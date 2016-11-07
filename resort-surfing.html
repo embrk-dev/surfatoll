@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Surfatoll | Maldives surf trip</title>
+	<link media="all" rel="stylesheet" href="css/jquery-ui.min.css">
 	<link media="all" rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -84,6 +85,37 @@
 							</div>
 							<fieldset class="set">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<ul class="fields">
+									<li>
+										<div class="datapicker_holder">
+											<label for="arrival_date"></label>
+											<input type="text" class="txt" id="arrival_date" placeholder="Arrival Date">
+										</div>
+									</li>
+									<li>
+										<div class="datapicker_holder">
+											<label for="departure_date"></label>
+											<input type="text" class="txt" id="departure_date" placeholder="Departure Date">
+										</div>
+									</li>
+									<li>
+										<select id="select_number_people" class="select select_number_people" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+											<option>Number of People</option>
+											<option>Number of People2</option>
+											<option>Number of People3</option>
+											<option>Number of People4</option>
+										</select>
+									</li>
+								</ul>
+								<dl class="prices">
+									<dt>Price per night:</dt>
+									<dd>$170.00</dd>
+									<dt>Boat Transfers:</dt>
+									<dd>$30.00</dd>
+									<dt><b>Total:</b></dt>
+									<dd><b>$800.00</b></dd>
+								</dl>
+								<button class="btn_submit"><i class="fa fa-calendar"></i> Check availability</button>
 							</fieldset>
 						</form>
 					</div>
@@ -244,6 +276,12 @@
 		</nav>
 	</div>
 	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
 	<script src="js/jquery.main.js"></script>
+	<script>
+		$(function() {
+		  $("#arrival_date, #departure_date").datepicker();
+		});
+	</script>
 </body>
 </html>
