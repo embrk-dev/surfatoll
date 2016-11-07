@@ -427,6 +427,7 @@ body{
 	}
 } /* featured_trips end */
 .intro{
+	background:url(../images/bg-islands.jpg) no-repeat 50% 0;
 	padding: 115px 0 80px;
 	text-align: center;
 	font-weight: 300;
@@ -453,7 +454,6 @@ body{
 	@media screen and (max-width:768px) {
 		padding-top: 80px;
 		padding-bottom: 30px;
-		background:url(../images/bg-islands.jpg) no-repeat 50% 0;
 		.btn{
 			padding-left: 10px;
 			padding-right: 10px;
@@ -503,9 +503,6 @@ body{
 		}
 	}
 } /* intro end */
-@media screen and (max-width:768px) {
-	.parallax-mirror{display: none;}
-}
 .info_blocks{
 	padding-bottom: 40px;
 	&:after:extend(.clearflow:after){}
@@ -643,6 +640,7 @@ body{
 	top: 12px;
 }
 .surfatoll_insta_photos{
+	background:url(../images/bg-photos.jpg) no-repeat 50% 0;
 	padding: 105px 0 140px;
 	text-align: center;
 	.wrapper{overflow: hidden;padding-bottom: 20px;}
@@ -670,7 +668,6 @@ body{
 	@media screen and (max-width:768px) {
 		padding-top: 50px;
 		padding-bottom: 40px;
-		background:url(../images/bg-photos.jpg) no-repeat 50% 0;
 		.list li{
 			width: percentage(1/3-@li_w);
 		}
@@ -951,7 +948,8 @@ body{
 }
 .wintrip{
 	.br(3px);
-	padding: 30px 6%;
+	padding: 30px 0;
+	width: 800px;
 	margin-bottom: 54px;
 	&:after:extend(.clearflow:after){}
 	.img{
@@ -1199,7 +1197,10 @@ body{
 	.br;
 	cursor: pointer;
 	position: relative;
-	.jcf-select-text{color: #343434;}
+	.jcf-select-text{
+		color: #343434;
+		white-space: nowrap;
+	}
 	.jcf-select-text .jcf-option-hideme {color: #7f7f7f;}
 }
 .jcf-select-opener{
