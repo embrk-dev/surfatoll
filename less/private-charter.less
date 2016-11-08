@@ -1,0 +1,169 @@
+/* private charter page*/
+.visual_private_charter{background-image: url(../images/img54.jpg);}
+.videoholder{
+  img:extend(.fullwidth_img){}
+  a{
+    display: block;
+    position: relative;
+    &:after{
+      content: '';
+      background:@sprites;
+      width: 130px;
+      height: 130px;
+      position: absolute;
+      left:calc(~'50% - 65px');
+      top:calc(~'50% - 65px');
+    }
+  }
+  .sidebar &{padding-top: 74px;}
+  @media screen and (max-width:700px) {
+    .sidebar &{
+      padding-top:0;
+      padding-bottom: 40px;
+    }
+  }
+}
+.our_fleet:extend(.find_existing_trip){
+  h3{margin-bottom: 60px;}
+  .blocks{
+    &:after:extend(.clearflow:after){}
+  }
+  .block{
+    width: percentage(0.94/3);
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    .img h4{font-size: 32px;}
+    .text{padding-top: 26px;}
+    &:nth-child(3n+1){
+      margin-left: 0;
+    }
+  }
+  .text{
+    dl{
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    dt{
+      display: inline;
+      font-weight: 500;
+    }
+    dd{
+      display: inline;
+      &:after{
+        content: '';
+        display: block;
+        height: 15px;
+      }
+    }
+  }
+  @media screen and (max-width:768px) {
+    .block .img h4{font-size: 24px;}
+  }
+  @media screen and (max-width:700px) {
+    .blocks{padding-bottom: 40px;}
+    .block{
+      width: percentage(0.97/2);
+      &:nth-child(3n+1){
+        margin-left: 3%;
+      }
+      &:nth-child(odd){
+        margin-left: 0;
+      }
+    }
+  }
+  @media screen and (max-width:414px) {
+    .block{
+      width:100%;
+      margin-left: 0 !important;
+      margin-bottom: 30px;
+      .img h4{font-size: 32px;}
+    }
+  }
+}
+.join_group{
+  background:url(../images/bg-joingroup.jpg) no-repeat 50% 50% / cover;
+  min-height: 300px;
+  padding: 92px 0 75px;
+  text-align: center;
+  margin-bottom: 100px;
+  .btn_white{
+    color: #343434;
+    &:hover{
+      background: #0693a1;
+      color: #fff;
+    }
+  }
+  h4{
+    margin-bottom: 30px;
+    font:bold 32px @fonts2;
+    color: #fff;
+    span{font-weight: 300;}
+  }
+}
+.routes{
+  &:after:extend(.clearflow:after){}
+  padding-bottom: 100px;
+  text-align: center;
+  .route{
+    display: inline-block;
+    vertical-align: top;
+    width: percentage(1/3);
+    margin-bottom: 35px;
+    min-width: 323px;
+    margin-left: -3px;
+  }
+  .heading{
+    padding-bottom: 40px;
+    h5:extend(.h3){
+      color: #474747;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0;
+      letter-spacing:1px;
+    }
+    h6{
+      font-style: italic;
+      font-weight: 400;
+      color: #0693a1;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+  .route_holder{
+    display: block;
+    position: relative;
+    margin: 0 auto 30px;
+    background:url(../images/img-atolls.png) no-repeat;
+    width: 323px;
+    height: 640px;
+    .route_directions{
+      position: absolute;
+      background:url(../images/bg-routes.png) no-repeat;
+    }
+    .north_route_directions{
+      width: 33px;
+      height: 100px;
+      background-position: 0 -387px;
+      left:140px;
+      top:4px;
+    }
+    .central_route_directions{
+      width: 145px;
+      height: 387px;
+      left:56px;
+      top:64px;
+    }
+    .north_route_directions2{
+      width: 283px;
+      height: 560px;
+      left:4px;
+      top:64px;
+      background-position: -145px 0;
+    }
+  }
+  @media screen and (max-width:414px) {
+    padding-bottom: 20px;
+  }
+}
+/* end of private charter page*/
