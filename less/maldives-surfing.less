@@ -292,10 +292,12 @@
   h3{margin-bottom: 35px;}
 }
 .faq_list{
-  li{
+  &>li{
     margin-bottom: 10px;
     border: 1px solid #dddddd;
+    background-color: #fff;
     &.opened{background-color: #fafafa;}
+    li{margin-bottom: 10px;}
   }
   .opener{
     font-weight: 300;
@@ -326,10 +328,14 @@
   .text{
     height: 0;
     overflow: hidden;
+    font-weight: 300;
   }
   .inner{
     color: #666;
-    padding:0 60px 10px 24px ;
+    padding:0 60px 10px 24px;
+    @media screen and (max-width:414px) {
+      padding-right: 20px;
+    }
   }
 }
 /* end of maldives surfing page*/
