@@ -1190,7 +1190,7 @@ body{
 	width: 100%;
 	border: none;
 	background: #fff;
-	padding: 12px 40px 12px 45px;
+	padding: 12px 40px 12px 20px;
 	display: block;
 	font-weight: 300;
 	font-style: italic;
@@ -1214,6 +1214,11 @@ body{
 		top: 0;
 	}
 }
+.prebook_hotel .jcf-select-select_villa,
+.prebook_hotel .jcf-select-select_surf_passes,
+.jcf-select-select_number_people{padding-left: 45px;}
+.prebook_hotel .jcf-select-select_surf_passes:after,
+.prebook_hotel .jcf-select-select_villa:after,
 .jcf-select-select_number_people:after:extend(.fa){
 	content: "\f183";
 	position: absolute;
@@ -1241,16 +1246,18 @@ body{
   }
   .jcf-option-hideme{display: none;}
 }
-.prebook_hotel .jcf-select-select_villa:after:extend(.reserve_resort_surfing_form .jcf-select-select_number_people:after){
-  content: '\f236';
+.prebook_hotel .jcf-select-select_villa:after:extend(.fa){
+  content: "\f236";
   left: 18px;
   top: 16px;
 }
-.prebook_hotel .jcf-select-select_surf_passes:after:extend(.reserve_resort_surfing_form .jcf-select-select_number_people:after){
-  content: '\f145';
+.prebook_hotel .jcf-select-select_surf_passes:after:extend(.fa){
+  content: "\f145";
   left: 18px;
   top: 16px;
 }
+.bg_empty{background: none !important;}
+
 @import "lightgallery";
 @import "maldives-surfing";
 @import "northern-atolls";
@@ -1262,3 +1269,4 @@ body{
 @import "boat-oasis";
 @import "faq";
 @import "gallery";
+@import "contact";
