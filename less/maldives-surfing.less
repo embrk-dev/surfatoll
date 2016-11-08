@@ -212,15 +212,20 @@
         height: 25px;
         display: block;
         margin: -34px auto 0;
+        opacity:0;
+        .trans;
       }
+      &.loaded:before{opacity:1;}
       span{
         position: absolute;
         bottom: 10px;
         left: 0;
         width: 100%;
         word-spacing: 500px;
-
+        opacity:0;
+        .trans;
       }
+      &.loaded span{opacity:1;}
     }
     .month,
     .month6{
