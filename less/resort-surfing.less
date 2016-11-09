@@ -86,7 +86,7 @@
     }
   }
 }
-.reserve_resort_surfing_form{
+.reserve_form{
   margin: 0 auto;
   background: #f1f1f1;
   box-shadow: 0 6px 14px #ccc;
@@ -119,6 +119,9 @@
     border: none;
     background: #fff;
     font-weight: 300;
+    padding: 12px 20px;
+    display: block;
+    .br;
     &::-webkit-input-placeholder {font-style: italic;color: #000;}
 		&::-moz-placeholder          {font-style: italic;color: #000;}
 		&:-moz-placeholder           {font-style: italic;color: #000;}
@@ -162,6 +165,8 @@
   label{
     position: absolute;
     width: 100%;
+    left: 0;
+    top: 0;
     line-height: 44px;
     &:before:extend(.fa),
     &:after:extend(.fa){
@@ -178,14 +183,8 @@
       content: "\f0d7";
     }
   }
-  .txt{
-    width: 100%;
-    border: none;
-    background: #fff;
+  .txt:extend(.reserve_form .txt){
     padding: 12px 40px 12px 45px;
-    color: #343434;
-    font-style: italic;
-    .br;
   }
 }
 .options_big{
