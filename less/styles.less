@@ -1814,7 +1814,9 @@ body{
   &:after:extend(.clearflow:after){}
   .btn_view{
     float: right;
-    margin-top: 20px;
+    margin-top: 15px;
+		padding-top: 25px;
+		padding-bottom: 25px;
     @media screen and (max-width:414px) {
       padding-left: 10px;
       padding-right: 10px;
@@ -2814,7 +2816,7 @@ dl.details_list{
 /* faq page*/
 .visual_faq{background-image: url(../images/img56.jpg);}
 .faq_page{
-  background:url(../images/bg-faq-page.jpg) no-repeat 50% 0;
+  background:url(../images/bg-islands.jpg) 50% 0 no-repeat, url(../images/bg-photos.jpg) no-repeat 50% 1200px;
   padding-top: 56px;
 }
 /* end of faq page*/
@@ -2860,10 +2862,10 @@ dl.details_list{
   }
 }
 .gallery_section{
-  padding-bottom: 46px;
+  padding-bottom: 30px;
   text-align: center;
   .btn{
-    margin:0 0 30px;
+    margin:0 0 54px;
     .fa{margin-right: 10px;}
   }
 }
@@ -3103,3 +3105,41 @@ dl.details_list{
 	}
 }
 /* end of blog post page*/
+
+/* sweepstakes page*/
+.sweepstakes_page{
+	#st_pusher{
+		background:url(../images/bg-sweepstakes.jpg) repeat-x 50% 0;
+	}
+	.visual{
+		background: none;
+		height: 510px;
+		margin-bottom: 130px;
+	}
+	.content{
+		.clearflow{background:url(../images/bg-faq-page.jpg) no-repeat 50% 0;}
+		.sidebar{background: none;}
+		.text{overflow: visible;}
+	}
+	ul.details_list{padding: 0 0 18px;}
+	.btn_facebook{margin: 16px 0 20px;}
+	.youtube_holder{margin-bottom: 70px;}
+	.container{
+		background:url(../images/bg-blogblock.jpg) no-repeat 50% 500%;
+		padding-bottom: 148px;
+	}
+	@media screen and (max-width:414px) {
+		.container{padding-bottom: 50px;}
+		.visual{margin-bottom: 60px;}
+	}
+}
+.btn_facebook:extend(.btn){
+	background-color: #3a579a;
+	box-shadow:0 6px 14px #ccc;
+	&:hover{
+		color: #fff;
+		background-color: #2a3f70;
+	}
+	.fa{margin-right: 12px;}
+}
+/* end of sweepstakes page*/
