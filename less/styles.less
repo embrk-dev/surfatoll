@@ -605,7 +605,7 @@ body{
 			font:300 20px @fonts2;
 			margin-bottom: 12px;
 			color: #474747;
-			&:hover{color: #222;}
+			&:hover a{color: #0693a1;}
 		}
 		.meta{
 			overflow: hidden;
@@ -614,7 +614,7 @@ body{
 			margin-bottom: 15px;
 			a{
 				color: #474747;
-				&:hover{color: #222;}
+				&:hover{color: #0693a1;}
 			}
 			li{
 				float: left;
@@ -2973,3 +2973,35 @@ dl.details_list{
   }
 }
 /* end of reservation page*/
+
+/* blog page*/
+.visual_blog{background-image: url(../images/img63.jpg);}
+.blog_posts_holder{
+	background:url(../images/bg-faq-page.jpg) no-repeat 50% 0;
+	.filter_bar{text-align: center;}
+	.recent_blog_articles{
+		padding: 0;
+		.block{
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			margin-bottom: 45px;
+			width: percentage(0.94/3);
+			margin-right: -3px;
+			&:nth-child(3n+1){margin-left: 0;}
+			@media screen and (max-width:960px) {
+				width: percentage(0.98/2);
+				margin-bottom: 25px;
+				margin-left:2% !important;
+				&:nth-child(odd){margin-left: 0 !important;}
+			}
+			@media screen and (max-width:550px) {
+				margin-left:0 !important;
+				width: 100%;
+			}
+		}
+	}
+}
+.filter_bar .jcf-select-select_category{width: 157px;text-align: center;}
+.filter_bar .jcf-select-select_sort_by{width: 110px;text-align: center;}
+/* end of blog page*/
