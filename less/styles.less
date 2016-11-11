@@ -1315,8 +1315,9 @@ body{
 .main_content{background:url(../images/bg-islands.jpg) no-repeat 50% 0;}
 .swell_charts{
   padding: 50px 0 0;
+	height: 410px;
   margin-bottom: 60px;
-  background:#2899a4 url(../images/bg-swells-chart.jpg) repeat-x 50% 0;
+  background:#2899a4 url(../images/bg-swells-chart.jpg) repeat-x 50% 70% / cover;
   text-align: center;
   .wrapper{max-width: 1200px;}
   h3:extend(.h3){
@@ -1771,7 +1772,12 @@ body{
   }
 }
 /* end of northern-atolls page*/
-
+/* central-atolls page*/
+.visual_central_atolls{background-image: url(../images/img80.jpg);}
+/* end of central-atolls page*/
+/* southern-atolls page*/
+.visual_southern_atolls{background-image: url(../images/img81.jpg);}
+/* end of southern-atolls page*/
 /* chickens page*/
 .visual_chickens{background-image: url(../images/img62.jpg);}
 .break_name{
@@ -2960,7 +2966,7 @@ dl.details_list{
 /* reservation page*/
 .visual_reservation{background-image: url(../images/img55.jpg);}
 .reservation_page{
-  background:url(../images/bg-reservations-page.jpg) no-repeat 50% 0;
+  background:url(../images/bg-islands.jpg) 50% 0 no-repeat, url(../images/bg-photos.jpg) no-repeat 50% 1200px;
   padding-top:50px;
   .reserve_form{
     max-width: 790px;
@@ -3107,15 +3113,10 @@ dl.details_list{
 /* end of blog post page*/
 
 /* sweepstakes page*/
+.visual_sweepstakes{
+	background-image: url(../images/img79.jpg);
+}
 .sweepstakes_page{
-	#st_pusher{
-		background:url(../images/bg-sweepstakes.jpg) repeat-x 50% 0;
-	}
-	.visual{
-		background: none;
-		height: 510px;
-		margin-bottom: 130px;
-	}
 	.content{
 		.clearflow{background:url(../images/bg-faq-page.jpg) no-repeat 50% 0;}
 		.sidebar{background: none;}
