@@ -128,9 +128,6 @@ body{
 		#header{
 			position: static;
 			padding-bottom: 40px;
-			.btn{
-				letter-spacing: 2px;
-			}
 		}
 		.text{
 			transform: none;
@@ -1320,7 +1317,7 @@ body{
   padding: 50px 0 0;
 	height: 410px;
   margin-bottom: 60px;
-  background:#2899a4 url(../images/bg-swells-chart.jpg) repeat-x 50% 70% / cover;
+  background:#2899a4 url(../images/bg-swells-chart.jpg) repeat-x 50% 38% / cover;
   text-align: center;
   .wrapper{max-width: 1200px;}
   h3:extend(.h3){
@@ -1541,9 +1538,10 @@ body{
       position: absolute;
       top:258px;
       left:218px;
-      width: 130px;
+      width: 230px;
       li{
         padding-bottom: 12px;
+				padding-right: 100px;
         position: relative;
         &:hover{
           & > a{text-decoration: underline;}
@@ -1552,7 +1550,7 @@ body{
       }
       .about{
         position: absolute;
-        right: -185px;
+        right: -85px;
         top: -105px;
         background-color: #fff;
         border: 1px solid #dadada;
@@ -2376,6 +2374,10 @@ body{
   background-position: -301px 0;
   width: 16px;
 }
+.icon_all_atolls:after:extend(.icon_north_male:after){
+  background-position: -301px -250px;
+  width: 16px;
+}
 .filter_bar{
   padding-bottom: 34px;
   overflow: hidden;
@@ -2886,14 +2888,31 @@ dl.details_list{
   overflow: hidden;
   padding-top: 12px;
   li{
-    width: 90px;
-    height: 90px;
-    margin: 0 30px 20px 0;
+    margin: 0 0 20px;
+		width: 21%;
     float: left;
 		padding:0;
-    &:before,
-    &:after{display: none;}
-    .icon_opt:before{left: 0;}
+		&:first-child{
+			width: 18.5%;
+			.icon_opt{float: left;}
+		}
+		&:last-child{
+			width: 18.5%;
+			.icon_opt{
+				float: right;
+			}
+		}
+		.icon_opt{
+			display: block;
+			width: 90px;
+	    height: 90px;
+			margin: 0 auto;
+			padding: 0;
+			&:before{left: 0;}
+	    &:after{display: none;}
+
+		}
+		.icon_opt:after{display: none;}
     a{
       display: block;
       height: 100%;
