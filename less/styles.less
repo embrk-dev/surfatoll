@@ -1137,7 +1137,7 @@ body{
   .jcf-option{
     cursor: pointer;
     display: block;
-    padding: 5px 20px;
+    padding: 1px 12px;
     margin-bottom: 5px;
     &:hover{background: #f1f1f1;}
   }
@@ -1161,7 +1161,7 @@ body{
 .visual_maldives_surfing{background-image: url(../images/img20.jpg);}
 .about_atolls{
   padding-bottom: 60px;
-  overflow: hidden;
+  &:after:extend(.clearflow:after){}
   .atolls_maps{
     float: right;
     width: 730px;
@@ -1533,6 +1533,26 @@ body{
       left: 60px;
       top: 624px;
     }
+    .atoll_meemu{
+			top: -12px;
+      left: 235px;
+    }
+    .atoll_thaa{
+      left: 73px;
+      top: 202px;
+    }
+    .atoll_laamu{
+      left: 14px;
+      top: 426px;
+    }
+    .atoll_huvadhoo{
+      left: 240px;
+      top: -8px;
+    }
+    .atoll_seenu{
+      left: -9px;
+      top: 525px;
+    }
     .points_list{
       text-align: center;
       position: absolute;
@@ -1624,7 +1644,7 @@ body{
     background:url(../images/bg-northatolls.png) no-repeat;
     height: 627px;
     .points_direction{
-      background:url(../images/bg-lines-northatoll.png) no-repeat;
+      background:url(../images/bg-breaks-pointers.png) no-repeat;
       width:176px;
       height:356px;
       position: absolute;
@@ -1633,6 +1653,139 @@ body{
       z-index: 0;
     }
   }
+	&.central_atoll{
+		.district_maps{width: 725px;}
+		.atoll_map{
+			background-image: url(../images/bg-centralatolls.png);
+			width: 480px;
+			height: 484px;
+			margin-top: 78px;
+			.points_direction{
+				background-position: -176px 0;
+				width: 340px;
+				height: 446px;
+				left: 13px;
+	      top: 24px;
+			}
+			.points_list{
+				left: 307px;
+				top: 10px;
+			}
+			.points_list_south{
+				top: 113px;
+			}
+		}
+		.solo{
+			width: 650px;
+			.atoll_map{width: 364px;}
+		}
+		.all_atolls_map .atoll_selection{
+			border: 0;
+			background-color: #907642;
+			width: 2px;
+			height: 256px;
+			border-radius: 0 2px 2px 0;
+			left: auto;
+			top: 194px;
+			right: 12px;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -73px;
+				background-color: #907642;
+				width: 73px;
+				height: 2px;
+				border-radius:2px 0 0 0;
+			}
+			&:before:extend(.about_atolls.central_atoll .all_atolls_map .atoll_selection:after){
+				top: 2px;
+				left: -73px;
+				width: 2px;
+				height: 106px;
+				border-radius:0;
+			}
+			span:extend(.about_atolls.central_atoll .all_atolls_map .atoll_selection:after){
+				width: 2px;
+				height: 93px;
+				border-radius:0;
+				top: 110px;
+				left: -153px;
+				&:after:extend(.about_atolls.central_atoll .all_atolls_map .atoll_selection:after){
+					left: 0;
+					top: -2px;
+					width: 82px;
+				}
+				&:before:extend(.about_atolls.central_atoll .all_atolls_map .atoll_selection:after){
+					top: auto;
+					bottom: -2px;
+					border-radius:0 0 0 2px;
+					width: 53px;
+					left: 0;
+				}
+			}
+			i:extend(.about_atolls.central_atoll .all_atolls_map .atoll_selection:after){
+				top: auto;
+				bottom: 0;
+				left: auto;
+				width: 100px;
+				right: 2px;
+				border-radius:0 0 0 2px;
+				&:after:extend(.about_atolls.central_atoll .all_atolls_map .atoll_selection:after){
+					left: 0;
+					top: auto;
+					bottom: 2px;
+					width: 2px;
+					height: 51px;
+					border-radius:0;
+				}
+			}
+		}
+	}
+	&.south_atoll{
+		.district_maps{width: 725px;}
+		.atoll_map{
+			background-image: url(../images/bg-southatolls.png);
+			width: 313px;
+			height: 566px;
+			margin-top: 50px;
+			.points_direction{
+				background-position: -516px 0;
+				width: 309px;
+				height: 541px;
+				left:58px;
+	      top: 66px;
+			}
+			.points_list{
+				left: 324px;
+				top: 52px;
+			}
+			.points_list_south{
+				top: 411px;
+				left: 329px;
+			}
+		}
+		.solo{
+			width: 650px;
+			.atoll_map{width: 364px;}
+		}
+		.all_atolls_map .atoll_selection{
+			width: 160px;
+			height: 192px;
+			left: -17px;
+			top: 448px;
+		}
+		.plane_huvadhoo{
+			position: absolute;
+			left: -25px;
+			top:232px;
+		}
+		.plane_seenu{
+			position: absolute;
+			left: 115px;
+			top: 562px;
+		}
+	}
   .all_atolls_map{
     float: right;
     margin-right:88px;
@@ -1790,11 +1943,12 @@ body{
   text-transform: uppercase;
   font-weight: 500;
   padding-left: 34px;
+	white-space: nowrap;
   &:after:extend(.fa){
     content: '';
     position: absolute;
     left: 8px;
-    top: -2px;
+    top: 0;
     background:@sprites -269px -204px;;
     width: 25px;
     height: 24px;
@@ -1835,6 +1989,98 @@ body{
 .break_jailbreaks{
 	top: 299px;
   left: 128px;
+}
+.break_veuvah{
+	top: 69px;
+  left: 225px;
+}
+.break_muli{
+	top: 81px;
+  left: 222px;
+}
+.break_maliks{
+	top: 311px;
+  left: -6px;
+}
+.break_bowling_alley{
+	top: 320px;
+  left: -2px;
+}
+.break_outside_mikado{
+	top: 352px;
+  left: 67px;
+}
+.break_machine{
+	top: 357px;
+  left: 213px;
+}
+.break_refugees_rights{
+	top: 366px;
+  left: 212px;
+}
+.break_ying_yang{
+	top: 461px;
+  left: 160px;
+}
+.break_vigili{
+	top: 80px;
+  left: 212px;
+}
+.break_beacons{
+	top: 357px;
+  left:61px;
+}
+.break_castaways{
+	top:370px;
+  left:105px;
+}
+.break_blue_bowls{
+	top:349px;
+  left:138px;
+}
+.break_five_islands{
+	top:340px;
+  left:170px;
+}
+.break_two_ways{
+	top:340px;
+  left:180px;
+}
+.break_love_charms{
+	top:332px;
+  left:198px;
+}
+.break_tiger_stripes{
+	top:326px;
+  left:230px;
+}
+.break_antiques{
+	top:337px;
+  left:219px;
+}
+.break_kottey{
+	top:478px;
+  left:39px;
+}
+.break_air_equator_lefts{
+	top:489px;
+  left:120px;
+}
+.break_kanda_muli{
+	top:531px;
+  left:107px;
+}
+.break_shangri_la{
+	top:538px;
+  left:101px;
+}
+.break_madihera{
+	top:546px;
+  left:92px;
+}
+.break_approach_lights{
+	top:555px;
+  left:89px;
 }
 .atoll_map .point:extend(.about_atolls .atolls_maps .islands .point, .about_atolls .atolls_maps .islands .point_maleairport){}
 .north_atoll .point_maleairport{
@@ -2999,7 +3245,10 @@ dl.details_list{
     float: right;
     width: 49%;
     &:first-child{float: left;}
-    iframe{width: 100%;}
+    iframe{
+			width: 100%;
+			border: 0;
+		}
     .title{
       display: block;
     }
@@ -3157,6 +3406,7 @@ dl.details_list{
 		left: 0;
 		width: 100%;
 		height: 100%;
+		border: 0;
 	}
 }
 .blog_post_footer{
