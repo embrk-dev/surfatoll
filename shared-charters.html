@@ -61,14 +61,14 @@
 									<dd>
 										<div class="datapicker_holder">
 											<label for="departure_date"></label>
-											<input type="text" class="txt" id="departure_date" value="2017/01/01">
+											<input type="text" class="txt" id="departure_date" value="01/01/2017">
 										</div>
 									</dd>
 									<dt>To:</dt>
 									<dd>
 										<div class="datapicker_holder">
 											<label for="arrival_date"></label>
-											<input type="text" class="txt" id="arrival_date" value="2017/01/01">
+											<input type="text" class="txt" id="arrival_date" value="01/01/2017">
 										</div>
 									</dd>
 									<dt><label for="select_choose_region">Region:</label></dt>
@@ -461,7 +461,7 @@
 	<script src="js/jquery.main.js"></script>
 	<script>
 		$(function() {
-		  $("#arrival_date, #departure_date").datepicker({dateFormat: "yy/dd/mm"});
+		  $("#arrival_date, #departure_date").datepicker({dateFormat: "mm/dd/yy"});
 		});
 	</script>
 </body>
