@@ -1332,6 +1332,7 @@ body{
 	border-radius:50%;
 	overflow:hidden;
 	margin:0 20px 0 0;
+	width:82px;
 }
 .wintrip .btn{
 	float:right;
@@ -2984,7 +2985,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 }
 @media screen and (max-width: 550px){
 	.about_atolls .atoll_map .points_list .about{
-		right:115px;
+		right:auto;
+		left:-148px;
 	}
 }
 .about_atolls .atoll_map .points_list_south{
@@ -3120,6 +3122,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 	top:470px;
 	position:absolute;
 }
+@media screen and (max-width: 450px){
+	.about_atolls.central_atoll .district_maps{
+		width:100%;
+	}
+	.about_atolls.central_atoll .atoll_map{
+		width:100%;
+		margin-left:-88px;
+		margin-top:0;
+	}
+}
 .about_atolls.south_atoll .district_maps{
 	width:725px;
 }
@@ -3165,6 +3177,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 	position:absolute;
 	left:115px;
 	top:562px;
+}
+@media screen and (max-width: 450px){
+	.about_atolls.south_atoll .district_maps{
+		width:100%;
+		margin-left:-100px;
+	}
+	.about_atolls.south_atoll .atoll_map{
+		margin-top:0;
+	}
 }
 .about_atolls .all_atolls_map{
 	float:right;
@@ -3359,14 +3380,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 	font-size:20px;
 	text-transform:uppercase;
 	font-weight:500;
-	padding-left:34px;
+	margin-left:29px;
+	margin-top:-5px;
 	white-space:nowrap;
+	background-color:rgba(255, 255, 255, .7);
+	padding:5px;
 }
 .break_name:after{
 	content:"";
 	position:absolute;
-	left:8px;
-	top:0;
+	left:-22px;
+	top:5px;
 	background:url(../images/sprite.png) no-repeat -269px -204px;
 	width:25px;
 	height:24px;

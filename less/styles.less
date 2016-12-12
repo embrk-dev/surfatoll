@@ -854,6 +854,7 @@ body{
 		.br50();
 		overflow: hidden;
 		margin: 0 20px 0 0;
+		width: 82px;
 		img:extend(.fullwidth_img){}
 	}
 	.btn{
@@ -1624,7 +1625,8 @@ span.jcf-select-select_number_people:after:extend(.fa){
 					color: #0693a1;
 				}
 				@media screen and (max-width:550px) {
-					right: 115px;
+					right: auto;
+					left: -148px;
 				}
 			}
 		}
@@ -1751,6 +1753,14 @@ span.jcf-select-select_number_people:after:extend(.fa){
 			top: 470px;
 			position: absolute;
 		}
+		@media screen and (max-width:450px) {
+			& .district_maps{width: 100%;}
+			.atoll_map{
+				width: 100%;
+				margin-left: -88px;
+				margin-top: 0;
+			}
+		}
 	}
 	&.south_atoll{
 		.district_maps{width: 725px;}
@@ -1794,6 +1804,13 @@ span.jcf-select-select_number_people:after:extend(.fa){
 			position: absolute;
 			left: 115px;
 			top: 562px;
+		}
+		@media screen and (max-width:450px) {
+			& .district_maps{
+				width: 100%;
+				margin-left: -100px;
+			}
+			& .atoll_map{margin-top: 0;}
 		}
 	}
 	.all_atolls_map{
@@ -1952,13 +1969,16 @@ span.jcf-select-select_number_people:after:extend(.fa){
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 500;
-	padding-left: 34px;
+	margin-left: 29px;
+	margin-top: -5px;
 	white-space: nowrap;
+	background-color:rgba(255,255,255,0.7);
+	padding: 5px;
 	&:after:extend(.fa){
 		content: '';
 		position: absolute;
-		left: 8px;
-		top: 0;
+		left: -22px;
+		top: 5px;
 		background:@sprites -269px -204px;;
 		width: 25px;
 		height: 24px;
