@@ -1342,7 +1342,7 @@ body{
 }
 .wintrip .text{
 	overflow:hidden;
-	padding-top:12px;
+	padding-top:6px;
 	font-weight:300;
 }
 .wintrip .text h4{
@@ -2642,7 +2642,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 	max-width:1200px;
 }
 .swell_charts h3{
-	color:#fff;
 	margin-bottom:50px;
 	letter-spacing:1px;
 }
